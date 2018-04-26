@@ -8,11 +8,11 @@ To get the latest version of Laravel UptimeRobot v2 API, simply require `"voltin
 
 Open up `app/config/app.php` and add the following to the `providers` key.
 
-* `VoltInternet\Monitors\MonitorsServiceProvider::class`
+* `Voltinternet\Monitors\MonitorsServiceProvider::class`
 
 Also add the following to the `aliases` key:
 
-* `'Monitors' => Akaramires\Monitors\Facades\Monitors::class`
+* `'Monitors' => Voltinternet\Monitors\Facades\Monitors::class`
 
 ## Configuration
 
@@ -20,4 +20,4 @@ Laravel UptimeRobot v2 API requires configuration.
 
 To get started, first publish the package config file:
 
-    php artisan vendor:publish --provider="VoltInternet\Monitors\MonitorsServiceProvider"
+    php artisan vendor:publish --provider="Voltinternet\Monitors\MonitorsServiceProvider"
