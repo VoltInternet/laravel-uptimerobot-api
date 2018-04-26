@@ -5,7 +5,7 @@
      * @copyright (C)Copyright 2018 voltinternet.nl
      */
 
-    namespace VoltInternet\Monitors\Facades;
+    namespace Voltinternet\Monitors\Facades;
 
     use Illuminate\Support\Facades\Facade;
 

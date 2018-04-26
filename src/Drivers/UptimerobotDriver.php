@@ -6,7 +6,7 @@
      * @copyright (C)Copyright 2018 voltinternet.nl
      */
 
-    namespace VoltInternet\Monitors\Drivers;
+    namespace Voltinternet\Monitors\Drivers;
 
     class UptimerobotDriver extends BaseDriver
     {

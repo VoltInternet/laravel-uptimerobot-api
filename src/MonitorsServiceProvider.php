@@ -4,7 +4,7 @@
      *
      * @copyright (C)Copyright 2018 voltinternet.nl
      */
-    namespace VoltInternet\Monitors;
+    namespace Voltinternet\Monitors;
 
     use Illuminate\Support\ServiceProvider;
 

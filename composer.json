@@ -22,7 +22,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Akaramires\\Monitors\\": "src/"
+      "Voltinternet\\Monitors\\": "src/"
     }
   },
   "license": "MIT",

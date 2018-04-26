@@ -5,9 +5,9 @@
      * @copyright (C)Copyright 2018 voltinternet.nl
      */
 
-    namespace VoltInternet\Monitors;
+    namespace Voltinternet\Monitors;
 
-    use VoltInternet\Monitors\Drivers\BaseDriver;
+    use Voltinternet\Monitors\Drivers\BaseDriver;
     use Exception;
 
     class Monitors
@@ -21,7 +21,7 @@
         public function createDriver($driver, $params)
         {
             try {
-                $driverName = '\VoltInternet\Monitors\Drivers\\' . ucfirst(strtolower($driver)) . "Driver";
+                $driverName = '\Voltinternet\Monitors\Drivers\\' . ucfirst(strtolower($driver)) . "Driver";
                 return new $driverName($params['api_key']);
             } catch (Exception $e) {
                 throw new \InvalidArgumentException('Invalid Monitor driver');

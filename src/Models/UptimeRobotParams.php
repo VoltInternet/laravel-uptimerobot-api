@@ -6,7 +6,7 @@
      * @copyright (C)Copyright 2018 voltinternet.nl
      */
 
-    namespace VoltInternet\Monitors\Models;
+    namespace Voltinternet\Monitors\Models;
 
     class UptimeRobotParams
     {
