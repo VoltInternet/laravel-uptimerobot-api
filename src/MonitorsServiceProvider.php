@@ -32,6 +32,7 @@
         public function register()
         {
             $this->app->singleton('uptimerobot', function ($app, $params) {
+                $params['api_key'] = config('monitors.uptimerobot.api_key');
                 return (new Monitors())->createDriver('uptimerobot', $params);
             });
         }

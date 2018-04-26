@@ -24,7 +24,6 @@
         {
             try {
                 $driverName = '\Akaramires\Monitors\Drivers\\' . ucfirst(strtolower($driver)) . "Driver";
-
                 return new $driverName($params['api_key']);
             } catch (Exception $e) {
                 throw new \InvalidArgumentException('Invalid Monitor driver');

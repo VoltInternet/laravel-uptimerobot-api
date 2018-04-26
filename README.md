@@ -1,4 +1,4 @@
-## Laravel 5 UptimeRobot API
+## Laravel 5 UptimeRobot API v2
 
 ## Installation
 

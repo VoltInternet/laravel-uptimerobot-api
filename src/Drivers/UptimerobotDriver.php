@@ -14,12 +14,11 @@
     {
         const API_TYPE = 'uptimerobot';
 
-        const API_HOST = 'https://api.uptimerobot.com';
+        const API_HOST = 'https://api.uptimerobot.com/v2';
 
         private function __getEndpoint($endpoint, array $data = [])
-        {
+        {   
             $params = http_build_query(array_merge($this->__config, $data, ['apiKey' => $this->__apiKey]));
-
             return '/' . $endpoint . '?' . $params;
         }
 
@@ -30,15 +29,20 @@
 
         public function getMonitors($params = [])
         {
-            $_params = [
-                'responseTimes'      => 1,
-                'responseTimesLimit' => 10,
-                'logs'               => 1,
-                'logsLimit'          => 10,
-                'showTimezone'       => 1,
-            ];
 
-            return $this->__request($this->__getEndpoint(__FUNCTION__, array_merge($params, $_params)));
+            if(!array_key_exists("api_key",$params)) {
+                $params = array_merge($params, ['api_key' => $this->__apiKey]);
+            }
+
+            $_params = [
+                'response_times'      => 1,
+                'logs'               => 1,
+                'showTimezone'       => 1,
+                'all_time_uptime_ratio' => 1,
+                'all_time_uptime_durations' => 1
+            ];
+            $params = array_merge($params, $_params);
+            return $this->__request($this->__getEndpoint(__FUNCTION__), 'post', $params);
         }
 
         public function newMonitor($monitorFriendlyName, $monitorURL, $monitorType, $additionalParams = [])

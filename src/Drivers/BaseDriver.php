@@ -39,11 +39,12 @@
             $method = strtolower($method);
 
             if ($method == 'post') {
-                $options['body'] = $data;
+                $options['form_params'] = $data;
             }
+            
+            // dd($options);
 
-            /** @var RequestInterface $response */
-            $response = $client->request($method, static::API_HOST . $endpoint, $options);
+            $response = $client->post(static::API_HOST . $endpoint,  $options);
 
             $body = json_decode($response->getBody(), true);
 
