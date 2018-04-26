@@ -1,14 +1,12 @@
 <?php
 
     /**
-     * Created by Elmar <e.abdurayimov@gmail.com> Abdurayimov
+     * Created by Volt Internet
      *
-     * @copyright (C)Copyright 2016 elmar.eatech.org
-     *               Date: 1/11/16
-     *               Time: 2:35 PM
+     * @copyright (C)Copyright 2018 voltinternet.nl
      */
 
-    namespace Akaramires\Monitors\Drivers;
+    namespace VoltInternet\Monitors\Drivers;
 
     class UptimerobotDriver extends BaseDriver
     {

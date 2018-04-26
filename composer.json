@@ -1,6 +1,6 @@
 {
-  "name": "akaramires/laravel-uptimerobot-api",
-  "description": "Laravel UpTimeRobot is an UptimeRobot API client for Laravel 5.*",
+  "name": "voltinternet/laravel-uptimerobot-api",
+  "description": "Laravel UpTimeRobot v2 is an UptimeRobot API client for Laravel 5.*",
   "keywords": [
     "uptimerobot",
     "monitor",
@@ -8,8 +8,8 @@
   ],
   "authors": [
     {
-      "name": "Elmar Abdurayimov",
-      "email": "e.abdurayimov@gmail.com"
+      "name": "Reinier Sierag ",
+      "email": "hello@voltinternet.nl"
     }
   ],
   "type": "library",

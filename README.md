@@ -4,11 +4,11 @@
 
 Please check the system requirements before installing Laravel UptimeRobot API.
 
-To get the latest version of Laravel UptimeRobot API, simply require `"akaramires/laravel-uptimerobot-api": "*"` in your `composer.json` file.
+To get the latest version of Laravel UptimeRobot v2 API, simply require `"voltinternet/laravel-uptimerobot-api": "*"` in your `composer.json` file.
 
 Open up `app/config/app.php` and add the following to the `providers` key.
 
-* `Akaramires\Monitors\MonitorsServiceProvider::class`
+* `VoltInternet\Monitors\MonitorsServiceProvider::class`
 
 Also add the following to the `aliases` key:
 
@@ -16,8 +16,8 @@ Also add the following to the `aliases` key:
 
 ## Configuration
 
-Laravel UptimeRobot API requires configuration.
+Laravel UptimeRobot v2 API requires configuration.
 
 To get started, first publish the package config file:
 
-    php artisan vendor:publish --provider="Akaramires\Monitors\MonitorsServiceProvider"
+    php artisan vendor:publish --provider="VoltInternet\Monitors\MonitorsServiceProvider"

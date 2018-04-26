@@ -1,14 +1,12 @@
 <?php
 
     /**
-     * Created by Elmar <e.abdurayimov@gmail.com> Abdurayimov
+     * Created by Volt Internet
      *
-     * @copyright (C)Copyright 2016 elmar.eatech.org
-     *               Date: 1/11/16
-     *               Time: 5:59 PM
+     * @copyright (C)Copyright 2018 voltinternet.nl
      */
 
-    namespace Akaramires\Monitors\Models;
+    namespace VoltInternet\Monitors\Models;
 
     class UptimeRobotParams
     {

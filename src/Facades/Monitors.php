@@ -1,13 +1,11 @@
 <?php
     /**
-     * Created by Elmar <e.abdurayimov@gmail.com> Abdurayimov
+     * Created by Volt Internet
      *
-     * @copyright (C)Copyright 2016 elmar.eatech.org
-     *               Date: 1/11/16
-     *               Time: 2:33 PM
+     * @copyright (C)Copyright 2018 voltinternet.nl
      */
 
-    namespace Akaramires\Monitors\Facades;
+    namespace VoltInternet\Monitors\Facades;
 
     use Illuminate\Support\Facades\Facade;
 

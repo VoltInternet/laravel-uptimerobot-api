@@ -1,15 +1,13 @@
 <?php
     /**
-     * Created by Elmar <e.abdurayimov@gmail.com> Abdurayimov
+     * Created by Volt Internet
      *
-     * @copyright (C)Copyright 2016 elmar.eatech.org
-     *               Date: 1/11/16
-     *               Time: 2:32 PM
+     * @copyright (C)Copyright 2018 voltinternet.nl
      */
 
-    namespace Akaramires\Monitors;
+    namespace VoltInternet\Monitors;
 
-    use Akaramires\Monitors\Drivers\BaseDriver;
+    use VoltInternet\Monitors\Drivers\BaseDriver;
     use Exception;
 
     class Monitors
@@ -23,7 +21,7 @@
         public function createDriver($driver, $params)
         {
             try {
-                $driverName = '\Akaramires\Monitors\Drivers\\' . ucfirst(strtolower($driver)) . "Driver";
+                $driverName = '\VoltInternet\Monitors\Drivers\\' . ucfirst(strtolower($driver)) . "Driver";
                 return new $driverName($params['api_key']);
             } catch (Exception $e) {
                 throw new \InvalidArgumentException('Invalid Monitor driver');
